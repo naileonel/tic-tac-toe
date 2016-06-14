@@ -258,7 +258,7 @@ function drawCheck()
   if(moveCount == 9)
   {
     reset()
-    alert("Draw") 
+    alert("De nuevo") 
   }
 }
 

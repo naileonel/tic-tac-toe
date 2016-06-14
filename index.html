@@ -6,13 +6,14 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+         <link rel="stylesheet" href="css/animate.min.css" type="text/css">  
     </head>
     <body>
         <!-- Inserta tu codigo aqui -->
-        <h1 class="text-center">TIC-TAC-TOE</h1>
+        <h1 class="text-center woow animated bounceInDown">TIC-TAC-TOE</h1>
         <hr>
 
-				<form name="tic" method="post" class="caja">
+				<form name="tic" method="post" class="caja woow animated bounceInUp">
 					<input type="button" name="sqr1" class="tictac" value=" X " onclick="if(document.tic.sqr1.value == '     ' &amp;&amp; turn == 0 &amp;&amp; mode == 1) {document.tic.sqr1.value = ' X '; sqr1T = 1; turn = 1; vari(); check();} else if(document.tic.sqr1.value == '     ' &amp;&amp; turn == 1 &amp;&amp; mode == 2) {document.tic.sqr1.value = ' X '; sqr1T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr1.value == '     ' &amp;&amp; turn == 0 &amp;&amp; mode == 2) {document.tic.sqr1.value = ' O '; sqr1T = 1; turn = 1; vari(); player1Check()} drawCheck()">
 					<input type="button" name="sqr2" class="tictac" value="     " onclick="if(document.tic.sqr2.value == '     ' &amp;&amp; turn == 0 &amp;&amp; mode == 1) {document.tic.sqr2.value = ' X '; sqr2T = 1; turn = 1; vari(); check();} else if(document.tic.sqr2.value == '     ' &amp;&amp; turn == 1 &amp;&amp; mode == 2) {document.tic.sqr2.value = ' X '; sqr2T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr2.value == '     ' &amp;&amp; turn == 0 &amp;&amp; mode == 2) {document.tic.sqr2.value = ' O '; sqr2T = 1; turn = 1; vari(); player1Check()} drawCheck()">
 					<input type="button" name="sqr3" class="tictac" value="     " onclick="if(document.tic.sqr3.value == '     ' &amp;&amp; turn == 0 &amp;&amp; mode == 1) {document.tic.sqr3.value = ' X '; sqr3T = 1; turn = 1; vari(); check();} else if(document.tic.sqr3.value == '     ' &amp;&amp; turn == 1 &amp;&amp; mode == 2) {document.tic.sqr3.value = ' X '; sqr3T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr3.value == '     ' &amp;&amp; turn == 0 &amp;&amp; mode == 2) {document.tic.sqr3.value = ' O '; sqr3T = 1; turn = 1; vari(); player1Check()} drawCheck()"><br>
@@ -25,5 +26,9 @@
 			</form>
         <script src="https://code.jquery.com/jquery-2.2.2.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/wow.min.js"></script>
+				<script>
+					new WOW().init();
+				</script>
     </body>
 </html>
